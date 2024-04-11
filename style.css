@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+.header{
+    
+    height:90vh;
+    width: 100%;
+    background-image: url("header2.jpg");
+    background-size : cover;
+    background-position:center;
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+.language-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    padding: 7px 10px;
+    border: 1px solid white;
+}
+.language-btn img{
+    width: 10px;
+    margin-left: 3px;
+}
+.content{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+   margin-top: 100px;
+    
+}
+.content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+    padding-left: 20px;
+}
+.content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.submit{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: hsl(0, 0%, 100%);
+    padding: 15px 30px;
+    font-size: 16px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+   
+}
+.email{
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 8px;
+    font-size: 20px;
+ 
+}
+.email input{
+    flex:1 ;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+   border-top:6px solid #333;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+   
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.faq {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+    
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+.according{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.according li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.according li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+}
+input[type="radio"]{
+    display: none;
+}
+.according .contenty{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.according input[type="radio"]:checked + label + .contenty{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.according input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+ email{
+    max-width: 400px;
+    margin: 20px auto 60px;
+    
+    
+    
+}
+ small{
+    font-size: 18px;
+    padding-bottom:  20px;
+ }
+ .footer{
+    background-image: url("footer.png");
+    height: 300px;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    margin-top: 25px;
+    padding: 50px 15% 10px;
+    border-top:3px solid #333 ;
+
+ }
+ @media only screen and (max-width:600px){
+    .logo{
+        width: 500px;
+    }
+    nav button{
+        padding: 5px 10px;
+
+    }
+    nav .language-btn{
+        padding: 4px 8px;
+    }
+    .header-content{
+        position: unset;
+        transform: none;
+        padding-top: 200px;
+    }
+ }

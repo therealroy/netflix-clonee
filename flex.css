@@ -1,0 +1,51 @@
+body{
+    text-align: center;
+}
+div{
+    display: inline-block;
+    display: flex;
+    flex-direction:column;
+}
+h1{
+    text-align: center;
+}
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    flex-grow: 20px;
+}
+#box2{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border: 2px solid black;
+
+}
+#box3{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border: 2px solid black;
+    
+}
+#box4{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 2px solid black;
+
+}
+#box5{
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    border: 2px solid black;
+
+}
+#container{
+    height:200px ;
+    width: 100px;
+    border: 2px solid black;
+}
